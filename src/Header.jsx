@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import TestLogo from "./assets/testlogo.svg";
+import TestLogo from "./assets/TestLogo.svg";
 import Home from "./assets/Icons/home_FILL0_wght300_GRAD0_opsz24.svg";
 import Group from "./assets/Icons/group_FILL0_wght300_GRAD0_opsz24.svg";
 import Calender from "./assets/Icons/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg";

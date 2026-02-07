@@ -165,3 +165,18 @@
   height: 20px;
   width: 20px;
 }
+.screen-alert {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .screen-alert {
+    display: block;
+  }
+  .Homepage-section {
+    display: none;
+  }
+  .Header-section {
+    display: none;
+  }
+}
