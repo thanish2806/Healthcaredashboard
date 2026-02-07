@@ -1,0 +1,233 @@
+/* ===== Diagnosis History Card ===== */
+.diagnosis-section {
+  display: flex;
+  flex-direction: column;
+  width: 726px;
+  gap: 24px;
+}
+.diagnosis-history {
+  background: #ffffff;
+  border-radius: 16px;
+  width: fit-content;
+  padding: 0px 24px 0px 24px;
+}
+
+/* Section title */
+.diagnosis-header {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  font-weight: 600;
+  color: #072635;
+  margin: 0;
+  padding: 20px 0px 20px 0px;
+}
+
+/* ===== Blood Pressure Card ===== */
+.bp-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f4f1ff;
+  border-radius: 12px;
+  width: 726px;
+}
+.chart-container-main {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+/* Header row */
+.bp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  padding: 16px;
+}
+
+.bp-header h3 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* Dropdown text */
+.bp-header span {
+  font-size: 14px;
+  color: #6b7280;
+}
+.bp-select {
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+}
+.bp-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* ===== Chart Container ===== */
+.bp-chart-container {
+  height: 290px;
+}
+canvas {
+  height: 290px;
+  width: 469px;
+  padding: 16px;
+}
+/* ===== Legend / Stats (Right Side) ===== */
+.bp-stats {
+  display: flex;
+  flex-direction: column;
+  width: 208px;
+  padding: 16px;
+  gap: 33px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Individual stat */
+.bp-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Label row */
+.bp-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+/* Color dots */
+.bp-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.bp-dot.systolic {
+  background: #e66fd2;
+}
+
+.bp-dot.diastolic {
+  background: #7a6ee6;
+}
+
+/* Values */
+.bp-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--font-color);
+}
+
+/* Status text */
+.bp-status {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Up / down arrows */
+.bp-status.up::before {
+  content: "▲ ";
+  color: var(--font-color);
+}
+
+.bp-status.down::before {
+  content: "▼ ";
+  color: var(--font-color);
+}
+.line-break {
+  width: 100%;
+  height: 2px;
+  background-color: #e3e4e6;
+}
+.heart-temp-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.heart-temp-section h3,
+.temp-status {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--font-color);
+  margin: 0;
+}
+.heart-rate-value,
+.respiratory-rate-value,
+.temperature-rate-value {
+  width: 33%;
+  padding: 16px;
+}
+.respiratory-rate-value {
+  background: #e0f3fa;
+  border-radius: 12px;
+}
+.temperature-rate-value {
+  background: #ffe6e9;
+  border-radius: 12px;
+}
+.heart-rate-value {
+  background: #ffe6f1;
+  border-radius: 12px;
+}
+.points {
+  font-size: 30px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  color: var(--font-color);
+}
+.diagonistic-list h3 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  color: var(--font-color);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  text-align: left;
+  font-size: 14px;
+  padding: 12px;
+  color: var(--font-color);
+}
+
+td {
+  padding: 12px;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--font-color);
+  overflow-y: auto;
+}
+
+tr:not(:last-child) {
+  border-bottom: none;
+}
