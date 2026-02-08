@@ -9,6 +9,9 @@
   width: 19px;
   height: 20px;
 }
+.horizontal-menu-icon {
+  rotate: 90deg;
+}
 .patient-details {
   display: flex;
   flex-direction: column;

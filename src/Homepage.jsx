@@ -68,7 +68,7 @@ export default function Homepage() {
                     </p>
                   </div>
                 </div>
-                <img src={MenuBar} className="icon" alt="Menu icon" />
+                <img src={MenuBar} className="horizontal-menu-icon" alt="Menu icon" />
               </div>
             </div>
           ))}
@@ -90,9 +90,6 @@ export default function Homepage() {
             className="profile-image"
           />
           <h2>{selectedPatient.name}</h2>
-          {/* <p>
-            {selectedPatient.gender}, {selectedPatient.age}
-          </p> */}
         </div>
 
         <div className="patient-about">
